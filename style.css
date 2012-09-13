@@ -1,0 +1,50 @@
+
+#spinner{
+    
+/*  define the default style for the spinner,
+    including dimensions and borders*/
+
+    width: 600px;
+    height: 60px;
+    background-image: url('stripes.jpg');
+    background-position: 0 -100px;
+    overflow: hidden;
+    border: black solid;
+    
+    
+    /*point to the animation function
+    30 second timeframe and linear (constant)
+    speed should make it look the most fluid*/
+    animation: spin 30s infinite linear;
+    -moz-animation: spin 30s infinite linear;
+    -webkit-animation: spin 30s infinite linear;
+    -o-animation: spin 30s infinite linear;
+}
+
+/*define the animation function
+to scroll down along the from near the top 
+to near the bottom*/
+@keyframes spin 
+{
+from { background-position: 0 -100px; }
+to {background-position: 0 -1100px;}
+}
+
+@-moz-keyframes spin 
+{
+from { background-position: 0 -100px; }
+to {background-position: 0 -1100px;}
+}
+
+@-webkit-keyframes spin 
+{
+from { background-position: 0 -100px; }
+to {background-position: 0 -1100px;}
+}
+
+@-o-keyframes spin 
+{
+from { background-position: 0 -100px; }
+to {background-position: 0 -1100px;}
+}
+
